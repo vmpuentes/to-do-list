@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>To-Do-List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1> To-Do-List </h1>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Add a task that you need to do:</h2>
+          <form id="task-info">
+            <div class="form-group">
+              <label for="task">Name the task</label>
+              <input type="text" class="form-control" id="task">
+            </div>
+            <div class="form-group">
+              <label for="completionDate">Complete this by: </label>
+              <input type="date" class="form-control" id="completionDate">
+            </div>
+
+
+            <!--<span class="btn btn-primary" id="add-task">Another task</span>
+            -- >
+            <button type="submit" class="btn">Add</button>
+
+
+          </form>
+          <h2>To-do:</h2>
+          <ul id="to-do">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-task">
+            <h2></h2>
+            <p>Task: <span class="thisTask"></span></p>
+            <p>Due Date: <span class="dueDate"></span></p>
+            <p>Steps:</p>
+            <ul id="steps">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
