@@ -25,16 +25,29 @@
               <label for="completionDate">Complete this by: </label>
               <input type="date" class="form-control" id="completionDate">
             </div>
+            <label for="priority">Priority</label>
+            <select class="form-control" id="priority">
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+            </select>
 
-
-            <!--<span class="btn btn-primary" id="add-task">Another task</span>
-            -- >
+            <span class="btn btn-warning" id="add-task">Another task</span>
             <button type="submit" class="btn">Add</button>
 
 
           </form>
           <h2>To-do:</h2>
-          <ul id="to-do">
+          <h4>HIGH</h4>
+          <ul id="to-do-high">
+
+          </ul>
+          <h5>MEDIUM</h5>
+          <ul id="to-do-medium">
+
+          </ul>
+          <h6>LOW</h6>
+          <ul id="to-do-low">
 
           </ul>
         </div>
