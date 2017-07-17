@@ -22,17 +22,24 @@ $(function() {
     var inputtedPriority = $("#priority").val();
 
     var newTask = new Task(inputtedTask, inputtedDate);
-    debugger;
 
     if (inputtedPriority === "High") {
-      
+      $("h4").show();
       $("#to-do-high").append("<li><span class='thisTask'>" + newTask.theTask + " by " +  newTask.dueDate + "</span></li>");
     } else if (inputtedPriority === "Medium") {
+      $("h5").show();
       $("#to-do-medium").append("<li><span class='thisTask'>" + newTask.theTask + " by " +  newTask.dueDate + "</span></li>");
     } else {
+      $("h6").show();
       $("#to-do-low").append("<li><span class='thisTask'>" + newTask.theTask + " by " +  newTask.dueDate + "</span></li>");
     }
 
     clearInput();
   });
+  // $("form#mexis").submit(function(event) {
+  //   event.preventDefault();
+  //   var newMexis = $(#priority).val();
 });
+
+
+ // <input type="checkbox" name="work-transportation" value="bike">
